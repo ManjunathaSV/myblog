@@ -1,0 +1,35 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "An App to handle blogs",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever start server/app.js ",
+    "stop": "forever stop server/app.js",
+    "test": "mocha server/api/blog/blog.spec.js server/api/blog/comment/comment.spec.js",
+    "reports": "mocha server/api/blog/blog.spec.js --reporter mochawesome --reporter-options reportDir=server/reports"
+  },
+  "keywords": [
+    "'blogs'",
+    "'comments'",
+    "'posts'"
+  ],
+  "author": "Manjunatha S V",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "forever": "^0.15.3",
+    "lodash": "^4.17.4",
+    "mocha": "^3.3.0",
+    "mongoose": "^4.9.6",
+    "mongoose-paginate": "^5.0.3",
+    "q": "^1.5.0",
+    "querystring": "^0.2.0",
+    "supertest": "^3.0.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^2.1.0"
+  }
+}
