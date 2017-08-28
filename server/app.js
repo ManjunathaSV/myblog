@@ -22,6 +22,7 @@ mongoose.connection.on('error', function(err) {
 // Populate DB with sample data
 if(config.seedDB) { require('./config/seed'); }
 
+//My second commit for a new branch test
 // Setup server
 let app = express();
 let server = require('http').createServer(app);
